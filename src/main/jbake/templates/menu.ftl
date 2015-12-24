@@ -1,47 +1,34 @@
-      
-    <nav class="navbar navbar-default navbar-fixed-top <#if config.site_nav_inverse=="true">navbar-inverse</#if>" role="navigation">
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">${config.site_title}</a>
+          <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">JBake</a>
         </div>
-        
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/pages/about.html">About me</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">Home</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">About</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">Subscribe</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
           </ul>
-        
-        <!-- Right navigation -->
-        <ul class="nav navbar-nav navbar-right">
-          <#if !config.sidebar_enabled?? || config.sidebar_enabled == "false">
-            <#if config.login_twitter?has_content>
-              <li><a href="http://twitter.com/${config.login_twitter}" title="Twitter"><i class="fa fa-twitter-square"></i></a></li>
-            </#if>
-            <#if config.login_github?has_content>
-              <li><a href="https://github.com/${config.login_github}" title="Github"><i class="fa fa-github-square"></i></a></li>
-            </#if>
-            <#if config.login_google_plus?has_content>
-              <li><a href="https://plus.google.com/${config.login_googleplus}" title="Google+"><i class="fa fa-google-plus-square"></i></a></li>
-            </#if>
-          </#if>
-          <#if config.render_archive?? && config.render_archive == "true">
-          <li><a href="/${config.archive_file}"><i class="fa fa-list"></i> ${config.tr_archive}</a></li>
-          </#if>
-          <li><a href="/${config.feed_file}" title="Rss"><i class="fa fa-rss"></i> ${config.tr_feed}</a></li>
-        </ul>
-        <!-- Right navigation end -->
-
-      </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav><!-- /.navbar -->
-
-    <!-- Begin page content -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
     <div class="container">

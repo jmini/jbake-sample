@@ -1,115 +1,52 @@
 /* Sticky footer styles
- * ------------------------------*/
-@import url('//fonts.googleapis.com/css?family=Noto+Sans');
+-------------------------------------------------- */
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+html,
 body {
-  font-family: 'Noto Sans', sans-serif;
-  margin: 0 0 75px; /* bottom = footer height */
-  margin-top: 60px;
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
 }
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 75px;
-  width: 100%;
-}
-/*-------------------------------*/
-
-
-/* Site custom styles
- * ------------------------------*/
-.gotop {
-  display: block;
-  text-align: right;
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
 }
 
-.sidebar-list {
-  font-size: 14px;
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+  padding: 0;
 }
 
-.sidebar-list-item {
-  padding-left: 40px;
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.static-box > .panel-body {
-  padding: 10px;
-  text-align: center;
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding-top: 60px;
+}
+.container .credit {
+  margin: 20px 0;
 }
 
-#repoview {
-  font-size: 12px;
-  padding: 5px;
-}
-
-.social-icon {
-  vertical-align: middle;
-}
-
-.share {
-  margin: 20px 0px 10px;
-}
-
-.read-more {
-  float: right;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.tagsbar {
-  text-transform: lowercase !important;
-  font-size: 11px;
-}
-
-/* You can override pre > code styles */
-.snippet {
-}
-
-/* You can override archive well styles */
-.archive-month {
-}
-
-/* You can override tag well styles */
-.tag-month {
-}
-
-/*-------------------------------*/
-
-
-/* Social share with counters
- * ------------------------------*/
-
-/* This gets Google to fall into place */
-.social {
-  font-size: 1px;
-}
-
-/* This gets Facebook to fall into place */
-.social iframe {
-  vertical-align: middle;
-}
-
-/* Set an optional width for your button wrappers */
-.social span {
-  display: inline-block;
-}
-
-/* Adjust the widths individually if you like */
-.social .facebook iframe {
-  border: none;
-  overflow: hidden;
-  height: 21px;
-  width: 120px;
-}
-
-.social .google {
-  width: 80px;
-}
-/*-------------------------------*/
-
+/*code {
+  font-size: 80%;
+}*/

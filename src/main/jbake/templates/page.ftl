@@ -1,13 +1,15 @@
 <#include "header.ftl">
-<#include "menu.ftl">
 
-      <div class="row">
-        <div class="col-md-12">
-          <article>
-            <h2>${content.title}</h2>
-            <p>${content.body}</p>
-          </article>
-        </div> <!-- /.col-md-12 -->
-      </div> <!-- /.row -->
+	<#include "menu.ftl">
+	
+	<div class="page-header">
+		<h1><#escape x as x?xml>${content.title}</#escape></h1>
+	</div>
+
+	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
+
+	<p>${content.body}</p>
+
+	<hr />
 
 <#include "footer.ftl">
