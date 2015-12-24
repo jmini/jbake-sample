@@ -1,0 +1,35 @@
+== jbake-sample
+
+Example project to use link:http://jbake.org/[JBake] with Maven.
+
+Based on the work:
+
+* jbake-sample
+** link:https://github.com/ingenieux/jbake-sample[ingenieux/jbake-sample]
+** link:https://github.com/pdudits/jbake-sample[pdudits/jbake-sample]
+** link:https://github.com/Fisiu/jbake-sample[Fisiu/jbake-sample]
+** link:https://github.com/mfandrade/jbake-sample[mfandrade/jbake-sample]
+* JBake 2.4.0 (example project structure)
+
+See the output online:
+http://jmini.github.io/jbake-sample/
+
+== Usage
+=== Generate the site
+Generate the site with JBake:
+
+    >mvn generate-resources
+
+Output is `target/jbake-sample`
+
+=== Push to GitHub pages
+Commit generate the site and push it to github pages:
+
+    >mvn site
+
+Do not forget to provide your GitHub credentials in your `settings.xml` file.
+
+See link:https://github.com/github/maven-plugins[GitHub Maven Plugins] for more information.
+
+=== Single step run
+Run `mvn exec:exec` to generate site and upload it with single step
