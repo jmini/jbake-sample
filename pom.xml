@@ -30,6 +30,7 @@
                 </configuration>
             </plugin>
 
+            <!-- Run JBake -->
             <plugin>
                 <groupId>br.com.ingenieux</groupId>
                 <artifactId>jbake-maven-plugin</artifactId>
@@ -65,6 +66,35 @@
                         <version>1.5.2</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+
+            <!-- Copy the images from the jbake content to the final output -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+                    <resources>
+                        <resource>
+                            <directory>src/main/jbake/content</directory>
+                            <includes>
+                                <include>**/*.png</include>
+                                <include>**/*.gif</include>
+                                <include>**/*.jpg</include>
+                                <include>**/*.jpeg</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <!-- Commit and push site to github pages, by default to gh-pages branch -->
@@ -106,6 +136,7 @@
                     <arguments>
                         <argument>clean:clean</argument>
                         <argument>jbake:generate</argument>
+                        <argument>resources:copy-resources</argument>
                         <argument>site:site</argument>
                         <argument>clean:clean</argument>
                     </arguments>
