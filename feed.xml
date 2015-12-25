@@ -6,8 +6,8 @@
     <atom:link href="http://jmini.github.io/jbake-sample/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Thu, 24 Dec 2015 16:16:30 +0100</pubDate>
-    <lastBuildDate>Thu, 24 Dec 2015 16:16:30 +0100</lastBuildDate>
+    <pubDate>Fri, 25 Dec 2015 20:30:26 +0100</pubDate>
+    <lastBuildDate>Fri, 25 Dec 2015 20:30:26 +0100</lastBuildDate>
 
     <item>
       <title>Fourth Post</title>
@@ -27,6 +27,9 @@
 &lt;p&gt;&lt;a href=&quot;http://example.org&quot;&gt;Example.org&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;image&quot;&gt;&lt;img src=&quot;jbake-logo.png&quot; alt=&quot;jbake-logo&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu,
