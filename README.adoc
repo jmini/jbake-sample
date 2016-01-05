@@ -1,3 +1,5 @@
+:issues: https://github.com/jmini/jbake-sample/issues
+
 == jbake-sample
 
 Example project to use link:http://jbake.org/[JBake] with Maven.
@@ -18,7 +20,7 @@ http://jmini.github.io/jbake-sample/
 === Generate the site
 Generate the site with JBake:
 
-    >mvn generate-resources
+    >mvn process-resources
 
 Output is `target/jbake-sample`
 
@@ -32,4 +34,30 @@ Do not forget to provide your GitHub credentials in your `settings.xml` file.
 See link:https://github.com/github/maven-plugins[GitHub Maven Plugins] for more information.
 
 === Single step run
-Run `mvn exec:exec` to generate site and upload it with single step
+The `exec-maven-plugin` is used to run the `mvn` command with a list of arguments.
+Those arguments correspond to the different goals that are requested to generate site and upload it.
+
+To use this possibility and run everything within a single step:
+
+    >mvn exec:exec
+
+== Reusing this sample project
+
+This setup can be reused for your own website/blog.
+You can copy it and adapt it to your website.
+
+* `pom.xml`
+** Change the maven `groupId` and `artifactId`
+** Change the properties `github.repository.owner` and `github.repository.name`
+** Change the `finalName` at the beginning of the `build`
+** If your GitHub pages needs to commit on the `master` branch, adapt the `site-maven-plugin` configuration
+* `src/main/jbake/jbake.properties`
+** Change the `site.host` variable
+
+=== Who is using this setup?
+
+* link:https://github.com/jmini/jmini.github.io/[jmini/jmini.github.io]
+
+== Get in touch
+
+Use the link:{issues}[GitHub issue tracker] or link:{twitter}[@j2r2b on Twitter].
