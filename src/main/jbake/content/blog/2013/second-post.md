@@ -7,10 +7,22 @@ status=published
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel diam purus. Curabitur ut nisi lacus.
 
+Internal links:
+
+* [The 1st post](first-post.html)
+* [The 3rd post](third-post.html)
+* [The 4th post](fourth-post.html)
+
+Link to the [text section](#nam) of this document.
+
+External links:
+
 * [http://example.org](http://example.org)
 * [Example.org](http://example.org)
 
-Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu, 
+![jbake-logo.png](jbake-logo.png)
+
+<a name="nam"></a>Nam id nisl quam. Donec a lorem sit amet libero pretium vulputate vel ut purus. Suspendisse leo arcu, 
 mattis et imperdiet luctus, pulvinar vitae mi. Quisque fermentum sollicitudin feugiat. Mauris nec leo 
 ligula. Vestibulum tristique odio ut risus ultricies a hendrerit quam iaculis. Duis tempor elit sit amet 
 ligula vehicula et iaculis sem placerat. Fusce dictum, metus at volutpat lacinia, elit massa auctor risus, 
