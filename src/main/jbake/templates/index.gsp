@@ -8,7 +8,7 @@
 	<%published_posts.each {post ->%>
 		<a href="${post.uri}"><h1>${post.title}</h1></a>
 		<p>${new java.text.SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH).format(post.date)}</p>
-		<p>${post.body}</p>
+		<% print com.bsiag.htmltools.jbake.HtmlUtility.fixHtml(post.body, config.index_file, post.uri) %>
   	<%}%>
 	
 	<hr />

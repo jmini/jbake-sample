@@ -16,7 +16,7 @@
       <pubDate>${new java.text.SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss Z", Locale.ENGLISH).format(post.date)}</pubDate>
       <guid isPermaLink="false">${post.uri}</guid>
       <description>
-      ${escapeXml(post.body)}
+      ${escapeXml(com.bsiag.htmltools.jbake.HtmlUtility.fixHtml(post.body, config.feed_file, post.uri))}
 	  </description>
     </item>
     <%}%>
