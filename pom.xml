@@ -51,9 +51,19 @@
                         <version>2.4.0</version>
                     </dependency>
                     <dependency>
-                        <groupId>org.freemarker</groupId>
-                        <artifactId>freemarker</artifactId>
-                        <version>2.3.20</version>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy</artifactId>
+                        <version>2.3.6</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-templates</artifactId>
+                        <version>2.3.6</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-xml</artifactId>
+                        <version>2.3.6</version>
                     </dependency>
                     <dependency>
                         <groupId>org.pegdown</groupId>

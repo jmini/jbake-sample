@@ -58,6 +58,10 @@ You can copy it and adapt it to your website.
 
 * link:https://github.com/jmini/jmini.github.io/[jmini/jmini.github.io]
 
+== Technical description
+
+* Templates are based on the initial groovy templates.
+
 == Get in touch
 
 Use the link:{issues}[GitHub issue tracker] or link:{twitter}[@j2r2b on Twitter].
