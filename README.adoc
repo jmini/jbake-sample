@@ -62,6 +62,7 @@ You can copy it and adapt it to your website.
 
 * Templates are based on the initial groovy templates.
 * Use English Locale in the date formatter (see link:https://github.com/jbake-org/jbake-example-project-groovy/pull/2[jbake-example-project-groovy/#2])
+* Add an "Edit on GitHub" link on each post/page (see link:https://groups.google.com/forum/#!topic/jbake-user/kcFpxlCEHOg[discussion on the mailing-list])
 
 == Get in touch
 

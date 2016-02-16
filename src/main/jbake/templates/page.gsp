@@ -1,3 +1,6 @@
+<%
+def urlsrc = com.bsiag.htmltools.jbake.HtmlUtility.computeGitViewerUrl(content.file, 'jbake-sample', "https://github.com/jmini/jbake-sample/blob/master")
+%>
 <%include "header.gsp"%>
 
 	<%include "menu.gsp"%>
@@ -10,6 +13,8 @@
 
 	<p>${content.body}</p>
 
+	<hr />
+		<a href="${urlsrc}">Page source on GitHub</a> 
 	<hr />
 
 <%include "footer.gsp"%>
