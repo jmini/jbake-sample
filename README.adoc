@@ -61,6 +61,7 @@ You can copy it and adapt it to your website.
 == Technical description
 
 * Templates are based on the initial groovy templates.
+* Use English Locale in the date formatter (see link:https://github.com/jbake-org/jbake-example-project-groovy/pull/2[jbake-example-project-groovy/#2])
 
 == Get in touch
 
