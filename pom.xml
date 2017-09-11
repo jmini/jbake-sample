@@ -61,17 +61,17 @@
                     <dependency>
                         <groupId>org.jbake</groupId>
                         <artifactId>jbake-core</artifactId>
-                        <version>2.4.0</version>
+                        <version>2.5.1</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy</artifactId>
-                        <version>2.3.6</version>
+                        <version>2.4.7</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-templates</artifactId>
-                        <version>2.3.6</version>
+                        <version>2.4.7</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
@@ -81,12 +81,12 @@
                     <dependency>
                         <groupId>org.pegdown</groupId>
                         <artifactId>pegdown</artifactId>
-                        <version>1.4.2</version>
+                        <version>1.6.0</version>
                     </dependency>
                     <dependency>
                         <groupId>org.asciidoctor</groupId>
                         <artifactId>asciidoctorj</artifactId>
-                        <version>1.5.2</version>
+                        <version>1.5.4.1</version>
                     </dependency>
                     <dependency>
                         <groupId>com.bsiag.htmltools</groupId>
